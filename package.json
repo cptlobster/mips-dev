@@ -1,0 +1,25 @@
+{
+  "name": "mips-dev",
+  "displayName": "MIPS Assembly Support",
+  "description": "Provides rich language services for MIPS Assembly, and support for debugging with SPIM",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "mips",
+      "aliases": ["MIPS", "mips"],
+      "extensions": [".s",".asm"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "mips",
+      "scopeName": "source.mips",
+      "path": "./syntaxes/mips.tmLanguage"
+    }]
+  }
+}
