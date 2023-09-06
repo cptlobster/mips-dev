@@ -1,7 +1,7 @@
 {
   "name": "mips-dev",
-  "displayName": "MIPS Assembly Support",
-  "description": "Provides rich language services for MIPS Assembly, and support for debugging with SPIM",
+  "displayName": "MIPS Assembly Development",
+  "description": "Rich language services for MIPS Assembly, and support for debugging with SPIM",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.81.0"
