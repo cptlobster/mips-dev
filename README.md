@@ -1,4 +1,4 @@
-# mips-intellisense README
+# mips-dev
 
 Rich language services for MIPS Assembly, and support for debugging with SPIM.
 
