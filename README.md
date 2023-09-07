@@ -6,7 +6,8 @@ Rich language services for MIPS Assembly, and support for debugging with SPIM.
 
 Current:
 
-- Syntax highlighting support for MIPS in `.s` or `.asm` files (not working)
+- Syntax highlighting support for MIPS in `.s` or `.asm` files
+  - Language syntax from [textmate/mips.tmbundle](https://github.com/textmate/mips.tmbundle/blob/master/Syntaxes/MIPS.tmLanguage)
 
 ## Requirements
 
@@ -52,3 +53,11 @@ Syntax highlighting does not work
 ## Release Notes
 
 See [CHANGELOG.md](CHANGELOG.md)
+
+## Licensing
+
+This project is licensed under the GNU General Public License, version 3. See [LICENSE.md](LICENSE.md) for a full copy of the license.
+
+Syntax highlighting for MIPS is provided under the following license ([source](https://github.com/textmate/mips.tmbundle/blob/master/Syntaxes/MIPS.tmLanguage)):
+
+> Permission to copy, use, modify, sell and distribute this software is granted. This software is provided "as is" without express or implied warranty, and with no claim as to its suitability for any purpose.
