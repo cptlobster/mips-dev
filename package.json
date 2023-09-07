@@ -9,9 +9,20 @@
   "categories": [
     "Programming Languages"
   ],
-  "activationEvents": [],
+  "activationEvents": ["onCommand:extension.cscs.repl"],
   "main": "./out/extension.js",
   "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "MIPS Assembly Development",
+      "properties": {
+        "spim.path": {
+          "type": "string",
+          "markdownDescription": "The location of the SPIM executable. You may need to adjust this if your instance of SPIM is installed in a non-standard directory (i.e. under your home folder, if you did not use `sudo make install` when compiling SPIM).\n\nPlease see the [README](https://github.com/cptlobster/mips-dev#requirements) for details on installing SPIM.",
+          "default": "/usr/bin/spim"
+        }
+      }
+    },
     "languages": [{
       "id": "mips",
       "aliases": ["MIPS", "mips"],
@@ -25,10 +36,20 @@
     }],
     "commands": [
       {
-        "command": "blep.helloWorld",
+        "command": "mips-dev.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "mips-dev.spim.repl",
+        "title": "Open SPIM REPL"
       }
-    ]
+    ],
+    "keybindings": [{
+      "command": "mips-dev.spim.repl",
+      "key": "ctrl+9",
+      "mac": "cmd+9",
+      "when": "editorTextFocus"
+   }]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
